@@ -1,0 +1,99 @@
+\hypertarget{test__p_8c}{}\doxysection{test/test\+\_\+p.c File Reference}
+\label{test__p_8c}\index{test/test\_p.c@{test/test\_p.c}}
+
+
+Unit tests for the nibble function using Unity.  
+
+
+{\ttfamily \#include \char`\"{}unity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}p.\+h\char`\"{}}\newline
+Include dependency graph for test\+\_\+p.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{test__p_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{test__p_8c_a7dfd9b79bc5a37d7df40207afbc5431f}{setup}} (void)
+\begin{DoxyCompactList}\small\item\em Setup function called before each test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__p_8c_a75dbff5b7c2c889050e2c49172679905}{teardown}} (void)
+\begin{DoxyCompactList}\small\item\em Teardown function called after each test. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__p_8c_a1d866c6377e75832838f5a0e388c9520}{test\+\_\+nibble\+\_\+zero}} (void)
+\begin{DoxyCompactList}\small\item\em Test nibble function with input zero. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__p_8c_a6c0bbbef1217eec4701b2137244de760}{test\+\_\+nibble\+\_\+basic}} (void)
+\begin{DoxyCompactList}\small\item\em Test nibble function with basic input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{test__p_8c_aaa205e9402aebe56a50dc6943b7ba0d7}{test\+\_\+nibble\+\_\+allones}} (void)
+\begin{DoxyCompactList}\small\item\em Test nibble function with all ones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Unit tests for the nibble function using Unity. 
+
+This file contains all the unit tests for the \mbox{\hyperlink{p_8c_ae352a605c48921b2031ec69a070df9ca}{swap\+\_\+nibble()}} function. It uses the Unity framework. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{test__p_8c_a7dfd9b79bc5a37d7df40207afbc5431f}\label{test__p_8c_a7dfd9b79bc5a37d7df40207afbc5431f}} 
+\index{test\_p.c@{test\_p.c}!setup@{setup}}
+\index{setup@{setup}!test\_p.c@{test\_p.c}}
+\doxysubsubsection{\texorpdfstring{setup()}{setup()}}
+{\footnotesize\ttfamily void setup (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Setup function called before each test. 
+
+This function initializes any necessary state before running each test case. \mbox{\Hypertarget{test__p_8c_a75dbff5b7c2c889050e2c49172679905}\label{test__p_8c_a75dbff5b7c2c889050e2c49172679905}} 
+\index{test\_p.c@{test\_p.c}!teardown@{teardown}}
+\index{teardown@{teardown}!test\_p.c@{test\_p.c}}
+\doxysubsubsection{\texorpdfstring{teardown()}{teardown()}}
+{\footnotesize\ttfamily void teardown (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Teardown function called after each test. 
+
+This function cleans up any state after each test case. \mbox{\Hypertarget{test__p_8c_aaa205e9402aebe56a50dc6943b7ba0d7}\label{test__p_8c_aaa205e9402aebe56a50dc6943b7ba0d7}} 
+\index{test\_p.c@{test\_p.c}!test\_nibble\_allones@{test\_nibble\_allones}}
+\index{test\_nibble\_allones@{test\_nibble\_allones}!test\_p.c@{test\_p.c}}
+\doxysubsubsection{\texorpdfstring{test\_nibble\_allones()}{test\_nibble\_allones()}}
+{\footnotesize\ttfamily void test\+\_\+nibble\+\_\+allones (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test nibble function with all ones. 
+
+Ensures that nibble(0x\+F) returns 0xF.
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000003}{Test}}]TEST\+\_\+\+ASSERT\+\_\+\+EQUAL\+\_\+\+HEX(0x\+FF, swap\+\_\+nibble(0x\+FF)); \end{DoxyRefDesc}
+\mbox{\Hypertarget{test__p_8c_a6c0bbbef1217eec4701b2137244de760}\label{test__p_8c_a6c0bbbef1217eec4701b2137244de760}} 
+\index{test\_p.c@{test\_p.c}!test\_nibble\_basic@{test\_nibble\_basic}}
+\index{test\_nibble\_basic@{test\_nibble\_basic}!test\_p.c@{test\_p.c}}
+\doxysubsubsection{\texorpdfstring{test\_nibble\_basic()}{test\_nibble\_basic()}}
+{\footnotesize\ttfamily void test\+\_\+nibble\+\_\+basic (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test nibble function with basic input. 
+
+Ensures that nibble(1) returns 1.
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000002}{Test}}]TEST\+\_\+\+ASSERT\+\_\+\+EQUAL\+\_\+\+HEX(0x54, swap\+\_\+nibble(0x45)); \end{DoxyRefDesc}
+\mbox{\Hypertarget{test__p_8c_a1d866c6377e75832838f5a0e388c9520}\label{test__p_8c_a1d866c6377e75832838f5a0e388c9520}} 
+\index{test\_p.c@{test\_p.c}!test\_nibble\_zero@{test\_nibble\_zero}}
+\index{test\_nibble\_zero@{test\_nibble\_zero}!test\_p.c@{test\_p.c}}
+\doxysubsubsection{\texorpdfstring{test\_nibble\_zero()}{test\_nibble\_zero()}}
+{\footnotesize\ttfamily void test\+\_\+nibble\+\_\+zero (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Test nibble function with input zero. 
+
+Ensures that nibble(0) returns 0.
+
+\begin{DoxyRefDesc}{Test}
+\item[\mbox{\hyperlink{test__test000001}{Test}}]TEST\+\_\+\+ASSERT\+\_\+\+EQUAL\+\_\+\+HEX(0x00, swap\+\_\+nibble(0x00)); \end{DoxyRefDesc}

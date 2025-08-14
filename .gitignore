@@ -1,0 +1,18 @@
+# Ceedling/build files
+out/
+*.gcda
+*.gcno
+*.gcov
+*.o
+
+# STM32 build files
+*.elf
+*.bin
+*.hex
+*.map
+
+# IDE/editor files
+*.swp
+.vscode/
+.idea/
+

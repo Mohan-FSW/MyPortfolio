@@ -1,0 +1,27 @@
+---
+:source:
+  :file: test/test_p.c
+  :dirname: test
+  :basename: test_p.c
+:successes:
+- :test: test_nibble_zero
+  :line: 20
+  :message: ''
+  :unity_test_time: 0
+- :test: test_nibble_basic
+  :line: 29
+  :message: ''
+  :unity_test_time: 0
+- :test: test_nibble_allones
+  :line: 38
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 3
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.0010309950002920232

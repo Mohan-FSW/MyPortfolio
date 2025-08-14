@@ -1,0 +1,27 @@
+---
+:source:
+  :file: test/test_p2.c
+  :dirname: test
+  :basename: test_p2.c
+:successes:
+- :test: test_negative_number
+  :line: 11
+  :message: ''
+  :unity_test_time: 0
+- :test: test_zero
+  :line: 15
+  :message: ''
+  :unity_test_time: 0
+:failures:
+- :test: test_positive_number
+  :line: 8
+  :message: Expected -1 Was 1
+  :unity_test_time: 0
+:ignores: []
+:counts:
+  :total: 3
+  :passed: 2
+  :failed: 1
+  :ignored: 0
+:stdout: []
+:time: 0.0014740530000381113
